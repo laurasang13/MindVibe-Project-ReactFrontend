@@ -1,0 +1,2 @@
+Que queremos conseguir?:
+Lista(HTML) -> Datos (array JS) -> Iteración (Click bottom) -> actualización del Dom

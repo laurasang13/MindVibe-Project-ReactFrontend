@@ -1,0 +1,59 @@
+.footer {
+  width: 100%;
+  padding: 40px 40px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  border-top: 1px solid rgba(131, 116, 142, 0.12);
+  gap: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.quote {
+  font-size: 16px;
+  color: #87748e; /* Tu color corporativo */
+  font-weight: 500;
+  margin: 0;
+}
+
+.brand {
+  font-size: 14px;
+  color: #b0a4b5; /* Un púrpura más clarito para el copyright */
+  letter-spacing: 0.5px;
+}
+
+/* Si quieres añadir un link sutil */
+.footer-link {
+  color: #87748e;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #5e5462;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 30px; 
+  margin-top: auto;
+  font-family: sans-serif;
+}
+
+.links a {
+  text-decoration: none;
+  color: #87748e;
+  font-weight: 500;
+  white-space: nowrap;
+}

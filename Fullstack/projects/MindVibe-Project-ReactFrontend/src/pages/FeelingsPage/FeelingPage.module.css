@@ -1,0 +1,58 @@
+.feeling-page {
+  color: #4f445c;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;  
+  min-width: none;
+}
+
+.feeling-page h1{
+  text-align: center;
+  font-size: 30px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: rgb(92, 84, 100);
+  max-width: 920px;
+}
+
+.moods-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 30px;
+  padding: 10px;
+  width: 100%;
+  max-width: 1260px;
+}
+
+@media (max-width: 1024px) {
+  .feeling-page {
+    padding: 72px 24px 50px;
+  }
+
+  .moods-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .feeling-page {
+    padding: 56px 16px 36px;
+  }
+
+  .title {
+    font-size: 2.3rem;
+  }
+
+  .moods-container {
+    grid-template-columns: 1fr;
+    padding: 0 12px;
+    gap: 18px;
+  }
+}

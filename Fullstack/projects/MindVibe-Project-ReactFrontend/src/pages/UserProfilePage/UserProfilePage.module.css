@@ -1,0 +1,111 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  /* 👈 centro vertical */
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 10px; 
+  color: rgb(92, 84, 100);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.header p {
+  color: #666;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+}
+
+.moods-grid {
+  display: flex;
+  justify-content: center;   /* 👈 centra cuando hay pocos */
+  align-items: center;
+  flex-wrap: wrap;           /* 👈 permite que bajen a otra fila */
+  gap: 2rem;
+  width: 100%;
+  padding: 20px
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+/* Estética para cuando no hay datos */
+.no-data {
+  grid-column: 1 / -1;
+  padding: 60px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  border: 2px dashed #ccc;
+  color: #888;
+  font-style: italic;
+}
+
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.button-container{
+  display: flex;
+  /*flex-wrap: wrap;*/
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  position: static;
+}
+
+.button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: sans-serif;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: #87748e;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(46, 196, 182, 0.3);
+  margin-top: 40px;
+  align-items: center;
+  
+}
+
+.button:hover {
+  background-color: #5e5462; 
+}
+
+
+
+/* Responsividad: igual que tu FeelingPage para coherencia */
+@media (max-width: 900px) {
+  .moods-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .moods-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: 32px;
+  }
+}
