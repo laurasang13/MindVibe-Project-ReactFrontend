@@ -15,17 +15,18 @@ function FeelingPage() {
 
   return (
     
-    <div className={styles["feeling-page"]}>
-       <div>
+    <article className={styles["feeling-page"]}>
+       <div className={styles["tittle-box"]}>
           <h1 className={styles["title"]}>How do you feel today?</h1>
+          <p>choose the mood which represents your mood.</p>
         </div>
-       
+      
         <div className={styles["moods-container"]}> 
             {moods.map((mood) => (
                 <MoodCard key={mood.name} mood={mood} onClick={handleSelectMood}/>
             ))}
         </div>
-    </div>
+    </article>
 
   )
 }

@@ -2,27 +2,44 @@ import "../../index.css";
 import styles from "../Navbar/Navbar.module.css";
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 
 function Navbar() {
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className={styles["navbar"]}>
-        <h1 className={styles.logo}
-        onClick={() => navigate("/HomePage")}
-        >MindVibes</h1>
+    <>
+      <nav className={styles["navbar"]}>
+          <h1 className={styles.logo}
+          onClick={() => navigate("/HomePage")}
+          >MindVibes</h1>
 
-        <div className={styles["links"]}>
+          <div 
+            className={styles["menu-icon"]} 
+            onClick={() => setMenuOpen(!menuOpen)}>
+            ☰
+          </div>
+
+          <div className={styles["links"]}>
+            <a href="/">Home</a>
+            <a href="/feelings">Moods</a>
+            <a href="#help">Blog</a>
+          </div>
+          <div className={styles["links"]}>
+              <button className={styles["button"]}
+              onClick={() => navigate("/UserProfilePage")}>Login</button>
+          </div>
+      </nav>
+      {menuOpen && (
+        <div className={styles["mobile-menu"]}>
           <a href="/">Home</a>
           <a href="/feelings">Moods</a>
-          <a href="#help">Blog</a>
+          <a href="#">Blog</a>
         </div>
-        <div className={styles["links"]}>
-            <button className={styles["button"]}
-            onClick={() => navigate("/UserProfilePage")}>Login</button>
-        </div>
-    </nav>
+      )}
+    </>
   );
 }
 

@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  justify-content: flex-start;
   width: 100%;
   padding: 0px;
   box-sizing: border-box;
-  margin: 10px;
+  margin: 0;
+  padding: 2rem 1rem;
 }
 .hero {
   display: flex;
@@ -16,7 +16,9 @@
   justify-content: center;
   width: 100%;
   background-color: transparent;
-  margin-top: 20px;
+  margin-top: 6rem;
+  gap: 2rem;
+  padding-right: 1rem;
   
 }
 
@@ -24,48 +26,55 @@
   object-fit: contain;
   /*margin-top: 0;*/
   margin-inline-start: 2vh;
+  margin-top: 2.2rem;
   display: block;
-  max-height: 50vh;
-  max-width: 850px;
-  height: 100%;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin-top: 8rem;
 }
 
 .description {
   margin: 0px;
   font-weight: 20;
   color: rgb(115, 98, 138);
-  font-size: 20px;
+  font-size: 1.1rem;
   text-align: center;
-  margin-top: 80px;
-  margin-bottom: 20px;
+  margin-top: 11rem;
+  
 }
 
 .button-container {
   display: flex;
-  /*flex-wrap: wrap;*/
+  flex-direction: row;
   gap: 20px;
   justify-content: center;
-  margin-top: 60px;
-  position: static;
+  align-items: center;
+  margin-top: 0.5rem;
   
 }
 
 .button-explore,
 .button-SignUp {
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: 0.5rem 1rem;
+  font-size: 12px;
   border-radius: 12px;
   border: none;
   background-color: #87748e;
   color: white;
   cursor: pointer;
-  font-family: sans-serif;
+  font-family: Verdana;
+  min-width: 160px;
+  letter-spacing: 0.5px;
+
+  
 }
 
 .button-explore:hover,
 .button-SignUp:hover {
   background-color: #5e5462; 
 }
+
 
 @media (max-width: 1024px) {
   .home-container {
@@ -76,6 +85,16 @@
   .logoHome {
     width: 100%;
   }
+  .button-explore,
+  .button-SignUp {
+    min-width: 160px;
+    max-width: 220px;
+  }
+  
+  .description {
+    margin-top: 40px;
+  }
+  
 }
 
 @media (max-width: 600px) {
@@ -85,19 +104,40 @@
   .logoHome {
     max-height: 25vh;
   }
-
   .description {
     font-size: 0.98rem;
-  }
+    margin-top: 12rem;
 
+  }
   .button-container {
     flex-direction: column;
     gap: 1rem;
     width: 100%;
+    margin-top: 0.9rem;
   }
-
-  /*.button-explore,
+  .logoHome{
+    margin-top: 7rem;
+  }
+  .button-explore,
   .button-SignUp {
     width: 100%;
-  }*/
+  }
+  .button-explore {
+    width: 100%;
+    max-width: 280px;
+  }
+  .button-SignUp {
+    background: none;
+    color: #87748e;
+    padding: 0;
+    width: auto;
+    margin: 0rem;
+  }
+  .button-SignUp:hover {
+    background: none;
+    color: #5e5462;
+  }
+  
+
+  
 }

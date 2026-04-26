@@ -2,60 +2,139 @@
   width: 100%;
   height: 70px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  justify-content: space-between;
+  padding: 0px 12px; 
   background-color: white;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
-.logo {
-  font-size: 24px;   
-  font-weight: 700;  
-  color: #87748e;       
-  cursor: pointer;
-  font-family: sans-serif;  
-
+.navbar {
+  position: relative;
 }
-/*.logo {
-  height: 120px; 
-  object-fit: contain;
-}*/
-.logo:hover{
-  color: #5e5462; 
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #87748e;
+  cursor: pointer;
+  font-family: var(--sans);
+  padding-left: 0.9rem;
+}
+
+.logo:hover {
+  color: #5e5462;
 }
 
 .links {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px; 
-  font-family: Verdana;
-  text-decoration: none;
+  align-items: center;
+  gap: 16px; /* 📱 más compacto */
+  font-family: var(--sans);
   color: #87748e;
-  font-weight: 500;
-}
+  font-weight: 300;
+  letter-spacing: 0.5px;
 
-
-
-.link:hover {
-  color: #463d49
 }
 
 .button {
-  padding: 12px 24px;
-  font-size: 16px;
-  border: none;
+  padding: 8px 16px;
+  font-size: 1.2rem;
   border-radius: 10px;
-  font-weight: 500;
+  border: none;
   background-color: #87748e;
   color: white;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(46, 196, 182, 0.3);
-  font-family: sans-serif;  
+  font-family: var(--sans);
+  letter-spacing: 0.5px;
 
+  
 }
 
 .button:hover {
-  background-color: #5e5462; 
+  background-color: #5e5462;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 70px;
+  right: 16px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 16px;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  letter-spacing: 0.5px;
+
+}
+
+.mobile-menu {
+  align-items: flex-start;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #87748e; 
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 0;
+  transition: color 0.2s;
+}
+
+.mobile-menu a:hover {
+  color: #5e5462;
+}
+
+
+/* 📲 TABLET */
+@media (min-width: 600px) {
+  .navbar {
+    padding: 0 24px;
+  }
+
+  .links {
+    gap: 24px;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 0 40px;
+  }
+
+  .links {
+    gap: 30px;
+  }
+
+}
+
+/* Tablets */
+@media (max-width: 600px) {
+  .links {
+    display: none;
+  }
+  
 }
