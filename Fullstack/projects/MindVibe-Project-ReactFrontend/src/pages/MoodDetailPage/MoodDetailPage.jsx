@@ -21,15 +21,15 @@ function MoodDetailPage() {
   if (loading) {
 
     return (
-    <div className={styles["colorMood-container"]}>
-      <p className={styles["loading"]}>Analyzing your feelings... ✨</p>
+    <div className={styles["messages-container"]}>
+      <p className={styles["loading"]}>Analyzing your Mood... ✨</p>
     </div>
     )
   }
 
   if (!data) {
     return (
-    <div className={styles["colorMood-container"]}>
+    <div className={styles["messages-container"]}>
       <p className={styles["notFoundMood"]}>Mood not found</p>
     </div>
     )

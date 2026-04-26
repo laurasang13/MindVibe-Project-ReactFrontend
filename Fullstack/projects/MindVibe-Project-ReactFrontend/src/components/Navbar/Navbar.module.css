@@ -37,18 +37,16 @@
 
 }
 
-.button {
-  padding: 8px 16px;
-  font-size: 1.2rem;
+.button-login {
+  padding: 6px 18px;
+  font-size: 1rem;
   border-radius: 10px;
   border: none;
-  background-color: #87748e;
+  background-color: #7a6581;
   color: white;
   cursor: pointer;
   font-family: var(--sans);
-  letter-spacing: 0.5px;
-
-  
+  letter-spacing: 1.5px;
 }
 
 .button:hover {

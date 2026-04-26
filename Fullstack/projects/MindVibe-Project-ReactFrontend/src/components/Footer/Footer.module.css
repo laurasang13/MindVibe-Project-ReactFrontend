@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  padding: 40px 40px;
+  padding: 20px 20px;
   background: #ffffff;
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@
 
 .links a {
   text-decoration: none;
-  color: #87748e;
+  color: #695a6f;
   font-weight: 300;
   white-space: nowrap;
   letter-spacing: 0.5px;

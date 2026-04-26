@@ -28,7 +28,7 @@ function Navbar() {
             <a href="#help">Blog</a>
           </div>
           <div className={styles["links"]}>
-              <button className={styles["button"]}
+              <button className={styles["button-login"]}
               onClick={() => navigate("/UserProfilePage")}>Login</button>
           </div>
       </nav>
@@ -37,6 +37,7 @@ function Navbar() {
           <a href="/">Home</a>
           <a href="/feelings">Moods</a>
           <a href="#">Blog</a>
+          <a href="/UserProfilePage">Login</a>
         </div>
       )}
     </>

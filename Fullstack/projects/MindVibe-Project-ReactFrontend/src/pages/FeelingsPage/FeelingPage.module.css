@@ -69,9 +69,8 @@
   }
   .moods-container {
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    padding: 1rem
-    
+    gap: 0.7rem;
+    padding: 0.8rem;    
   }
   
 }

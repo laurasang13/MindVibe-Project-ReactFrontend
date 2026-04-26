@@ -1,10 +1,13 @@
 .profile-container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;   
+  margin: 0 auto;
+  padding: 60px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
-  min-height: 100vh;
-  margin-top: auto;
+  min-height: auto; 
 }
 
 .header {
@@ -12,8 +15,8 @@
 }
 
 .title {
-  font-size: 42px;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 550;
   margin-top: 30px;
   margin-bottom: 10px; 
   color: rgb(92, 84, 100);
@@ -28,15 +31,11 @@
 }
 
 .moods-grid {
-  display: flex;
-  justify-content: center;   /* 👈 centra cuando hay pocos */
-  align-items: center;
-  flex-wrap: wrap;           /* 👈 permite que bajen a otra fila */
-  gap: 2rem;
+  display: grid; 
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   width: 100%;
-  padding: 20px
 }
-
 
 img {
   width: 100%;
@@ -64,7 +63,6 @@ img {
 
 .button-container{
   display: flex;
-  /*flex-wrap: wrap;*/
   gap: 20px;
   justify-content: center;
   margin-top: 30px;
@@ -93,20 +91,60 @@ img {
 
 
 
-/* Responsividad: igual que tu FeelingPage para coherencia */
-@media (max-width: 900px) {
+/*comentarlo a la clase*/
+
+@media (max-width: 1024px) {
+  
+  /*comentarlo a la clase
   .moods-grid {
+   .moods-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  }*/
+  .profile-container {
+
+  max-width: 700px;   
+  }
+
+  moods-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .title {
+    font-size: 28px;
+  }
+
 }
 
 @media (max-width: 600px) {
   .moods-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     padding: 10px;
   }
   
   .title {
-    font-size: 32px;
+    font-size: 26px;
   }
+
+  .header {
+  margin-bottom: 30px; 
+  margin-top: 10px;
+}
+.profile-container {
+  max-width: 300px;   
+  }
+  .button-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .button{ 
+  padding: 14px;
+  font-size: 12px;
+  font-family: sans-serif;
+  background-color: transparent;
+  box-shadow: none;
+  font-weight: 200;
+  color: rgb(84, 75, 92);
+
+  }
+
 }
