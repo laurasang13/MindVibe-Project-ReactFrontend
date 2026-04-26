@@ -26,27 +26,27 @@
   text-align: center;
 }
 
-h1 {
+.colorMood-container h1 {
     font-size: 32px;
     color: rgb(82, 77, 88);
     margin-bottom: 70px;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 
-h3 {
-    font-size: 24px;
+.colorMood-card h3 {
+    font-size: 22px;
     color: rgb(82, 77, 88);
     margin-top: 20px;
 }
 
-p {
+.colorMood-card p {
     font-size: 16px;
     color: rgb(82, 77, 88);
     margin-top: 15px;
     font-family: Verdana;
 }
 
-ul {
+.colorMood-card ul {
   list-style: none;
   padding-left: 0;
   margin-top: 15px;
@@ -56,11 +56,11 @@ ul {
 }
 
 .phrase {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: #5f536e;
   line-height: 1.95;
-  margin-top: 90px;
-  padding-bottom: 80px;
+  margin-top: 80px;
+  padding-bottom: 120px;
   font-style: italic;
 }
 
@@ -88,7 +88,7 @@ ul {
   margin-top: 2.5rem;
 }
 
-.back-button {
+/*.return-button {
   padding: 12px 24px;
   font-size: 16px;
   border: none;
@@ -101,9 +101,9 @@ ul {
   font-family: sans-serif; 
 }
 
-.back-button:hover {
+.return-button:hover {
     background-color: #5e5462; 
-}
+}*/
 
 @media (max-width: 900px) {
   .colorMood-card {
