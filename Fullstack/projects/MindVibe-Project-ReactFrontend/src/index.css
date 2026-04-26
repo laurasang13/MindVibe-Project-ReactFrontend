@@ -32,6 +32,10 @@ body {
   color: var(--text);
   background: linear-gradient(180deg, rgba(243, 236, 250, 0.9) 0%, #fff 100%);
   position: relative;
+  align-items: center;
+  justify-content: center;
+  grid-column: auto;
+  margin: 0 auto;
 }
 
 body, input, button, textarea, select {
