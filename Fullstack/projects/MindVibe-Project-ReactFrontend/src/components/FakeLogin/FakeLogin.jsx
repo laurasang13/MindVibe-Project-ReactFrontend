@@ -50,7 +50,7 @@ function FakeLogin() {
             onChange={handleChange}
           />
 
-          <button type="submit">Create Account</button>
+          <button type="submit">Login</button>
         </form>
 
       </div>

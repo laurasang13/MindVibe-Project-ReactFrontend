@@ -1,6 +1,7 @@
 import "../../index.css";
 import styles from "../Navbar/Navbar.module.css";
 import { NavLink } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -23,9 +24,9 @@ function Navbar() {
           </div>
 
           <div className={styles["links-menu"]}>
-            <a href="/">Home</a>
-            <a href="/feelings">Moods</a>
-            <a href="#help">Blog</a>
+            <Link to="/">Home</Link>
+            <Link to="/feelings">Moods</Link>
+            <Link to="">Blog</Link>
           </div>
           <div className={styles["button-login"]}>
               <button className={styles["button-login"]}
