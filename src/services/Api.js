@@ -62,7 +62,7 @@ export async function analyzeMood(mood) {
 
     if (!text) throw new Error("No se recibió texto de la API");
 
-    // Limpiar bloques de código markdown y parseamos
+    // Limpiar bloques de código markdown y parseo
     const cleanText = text.replace(/```json|```/g, "").trim();
     const parsed = JSON.parse(cleanText);
 
@@ -70,6 +70,6 @@ export async function analyzeMood(mood) {
 
   } catch (error) {
     console.error("Error en analyzeMood:", error.message);
-    return null; // Esto hace que tu hook use el fallback automáticamente
+    return null; // Esto hace que use el fallback 
   }
 }
