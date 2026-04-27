@@ -152,8 +152,30 @@ Durante el desarrollo se abordaron los siguientes retos:
 
 
 ---
+## Configuración de API Key
+
+Para que la aplicación funcione correctamente, es necesario configurar una API Key para el modelo de lenguaje.
+
+### 1. Obtener una API Key
+
+Puedes obtener una API Key desde:
+- Google AI Studio (Gemini): https://aistudio.google.com/
+
+---
+
+### 2. Crear archivo `.env`
+
+En la raíz del proyecto, crea un archivo llamado:
+`.env`
+Y añade tu clave: `VITE_API_KEY=tu_api_key_aqui`.
+
+
+
+
+---
+
 
 ## Deployment
-* **Live URL:** *.....*
+* **Live URL:** *https://mind-vibe-project-react-frontend-kz.vercel.app*
 
 * **Laura Sang** *https://github.com/laurasang13*
