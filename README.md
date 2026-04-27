@@ -167,10 +167,7 @@ Puedes obtener una API Key desde:
 
 En la raíz del proyecto, crea un archivo llamado:
 `.env`
-Y añade tu clave: `VITE_API_KEY=tu_api_key_aqui`.
-
-
-
+Y añade tu clave: `VITE_API_KEY=tu_api_key_aqui` (doc: `Api.js`)
 
 ---
 
