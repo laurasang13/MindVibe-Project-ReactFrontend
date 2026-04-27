@@ -14,22 +14,23 @@ No pretende sustituir ayuda profesional, sino ofrecer un **primer paso de autoco
 
 El flujo de la aplicación está diseñado para ser rápido, intuitivo y sin fricción:
 
-1. El usuario entra en la plataforma.
-2. Accede a una pantalla con diferentes **tarjetas de estados de ánimo**.
-3. Selecciona el mood que mejor representa cómo se siente.
-4. Automáticamente accede a una vista donde recibe:
-   - Una **micro acción inmediata**
+1. El usuario accede a la plataforma.
+2. Visualiza una serie de tarjetas que representan distintos estados emocionales.
+3. Selecciona el mood que mejor encaja con cómo se siente.
+4. Accede a una vista personalizada donde recibe:
    - Recomendaciones prácticas
-   - Una frase positiva o reflexiva
+   - Una frase reflexiva o motivacional
 
 Además, el usuario puede:
 
-- Crear una cuenta (simulada actualmente con almacenamiento local)  
-- Guardar su historial de estados de ánimo  
-- Ver un resumen de sus moods  
-- Identificar su **estado de ánimo dominante** en base a su actividad reciente  
-- Acceder rápidamente a su mood actual  
-- Eliminar su historial cuando lo desee  
+- Crear una cuenta (simulada mediante almacenamiento local)
+- Guardar su historial de estados emocionales
+- Consultar un resumen de sus moods
+- Identificar su estado de ánimo dominante
+- Acceder rápidamente a su mood actual
+- Eliminar su historial cuando lo desee
+
+Las recomendaciones se generan dinámicamente mediante la integración con un modelo de lenguaje.
 
 ---
 
@@ -37,67 +38,117 @@ Además, el usuario puede:
 
 El proyecto está desarrollado con un stack moderno orientado a frontend:
 
-- **React**  
-- **React Router**  
-- **CSS Modules**  
-- **LocalStorage**  
-- **Custom Hooks**  
-- **API externa / lógica IA**  
+### Stack tecnológico
 
-### Inteligencia Artificial
+- React
+- React Router
+- CSS Modules
+- LocalStorage
+- Custom Hooks
+- Consumo de API externa (Modelo de lenguaje mediante API de Gemini)
 
-- **GPT (OpenAI)**  
-- **Gemini (Google)**  
+### Apoyo en el desarrollo
+
+Durante el desarrollo del proyecto se utilizaron herramientas de inteligencia artificial y documentación técnica como soporte, incluyendo:
+
+- GPT (OpenAI)  
+- Gemini (Google) 
+
+### Herramientas y despliegue
+
+- Desarrollo: Visual Studio Code  
+- Control de versiones: Git y GitHub  
+- Despliegue: Vercel / Netlify
 
 ---
 
-## 4. Desafíos técnicos
+## 4. Arquitectura
 
-Los principales retos durante el desarrollo han sido:
+MindVibes sigue una arquitectura frontend ligera:
+
+Usuario  
+   ↓  
+React UI (Componentes + Routing)  
+   ↓  
+Custom Hooks (gestión de estado y lógica)  
+   ↓  
+API Layer (useFetch)  
+   ↓  
+Modelo de lenguaje (Gemini)  
+   ↓  
+Respuesta estructurada  
+   ↓  
+Renderizado dinámico en UI
+
+
+---
+
+## 5. Desafíos técnicos
+
+Durante el desarrollo se abordaron los siguientes retos:
 
 ### 1. Gestión del estado emocional del usuario
-- Diseñar una estructura para guardar moods
-- Calcular el estado dominante
+- Diseño de estructura para almacenar moods
+- Cálculo del estado emocional dominante
 
 ### 2. Persistencia de datos sin backend
-- Uso de localStorage
-- Mantener coherencia entre navegación y datos
+- Uso de LocalStorage
+- Sincronización entre navegación y datos
 
 ### 3. Integración de IA
-- Generación de contenido dinámico
-- Gestión de estados de carga
+- Generación de contenido dinámico mediante API
+- Gestión de estados asíncronos (loading, error, success)
 
-### 4. Responsive design
+### 4. Experiencia de usuario
+- Flujo simple e intuitivo
+- Feedback inmediato tras cada interacción
+
+### 5. Responsive design
 - Adaptación a distintos dispositivos
-- Navbar dinámica
-
-### 5. Experiencia de usuario
+- Navegación optimizada
 - Flujo simple
 - Feedback inmediato
 
+### 6. Gestión de renderizado condicional
+- Control de estados de carga y errores
+- Evitar renderizados incorrectos cuando no hay datos
+
+
 ---
 
-## 5. Backlog (mejoras futuras)
+## 6. Backlog (mejoras futuras)
 
 ### Funcionales
-- Autenticación real
-- Base de datos
-- Sistema de recomendaciones avanzado
+- Sistema de autenticación real
+- Integración con base de datos
+- Sistema de recomendaciones más avanzado
 - Notificaciones
 
-### IA
-- Personalización avanzada
-- Análisis emocional (NLP)
-- Chat con IA
+### Inteligencia Artificial
+- Personalización avanzada de respuestas
+- Mejora del prompting
+- Implementación de chat conversacional
+- Optimización de llamadas a la API (evitar renderizados duplicados y llamadas innecesarias)
 
 ### Analítica
 - Dashboard emocional
-- Evolución de moods
+- Seguimiento de evolución de moods
 
 ### UX/UI
 - Animaciones
 - Dark mode
-- Mejoras responsive
+- Mejora del diseño responsive
+- 
+
+
+---
+
+## 7. Aprendizajes clave
+
+- Diseño de aplicaciones centradas en el usuario  
+- Integración práctica de modelos de lenguaje  
+- Arquitectura frontend desacoplada mediante hooks  
+- Gestión de estado y asincronía en React  
 
 
 ---
