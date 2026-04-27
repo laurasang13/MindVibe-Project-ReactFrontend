@@ -1,15 +1,13 @@
 .profile-container {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  min-height: calc(100vh - 180px);
-  padding: 100px 34px 80px;
-  gap: 1.5rem;
+  display: flex;
   flex-direction: column;
-}
+  align-items: center;
+  text-align: center;
 
-.header-container {
-  
+  padding: 60px 20px 40px;
+  gap: 1.5rem;
+}
+.header-container { 
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -21,7 +19,7 @@
   font-size: 30px;
   color: #3d3158;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .subtitle {
@@ -40,12 +38,13 @@
 }
 
 .featured-mood {
-  width: min(460px, 100%);
+  width: min(320px, 90%);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
+
 
 .mood-label {
   color: #7c6597;
@@ -55,13 +54,13 @@
 }
 
 .button-container {
-  margin-top: 2.5rem;
-  padding-bottom: 50px;
+  margin-top: 1.5rem;
+  padding-bottom: 30px;
   padding-top: 20px;
 }
 
 .back-button {
-  padding: 12px 24px;
+  padding: 0.5rem 3rem;
   font-size: 16px;
   border: none;
   border-radius: 10px;
@@ -87,7 +86,7 @@
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (350px <= width <= 600px) {
   .profile-container {
     padding: 40px 18px 60px;
   }
@@ -99,5 +98,9 @@
   .back-button {
     width: 100%;
   }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
 }
 

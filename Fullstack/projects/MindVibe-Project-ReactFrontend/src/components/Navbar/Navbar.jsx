@@ -22,12 +22,12 @@ function Navbar() {
             ☰
           </div>
 
-          <div className={styles["links"]}>
+          <div className={styles["links-menu"]}>
             <a href="/">Home</a>
             <a href="/feelings">Moods</a>
             <a href="#help">Blog</a>
           </div>
-          <div className={styles["links"]}>
+          <div className={styles["button-login"]}>
               <button className={styles["button-login"]}
               onClick={() => navigate("/UserProfilePage")}>Login</button>
           </div>
