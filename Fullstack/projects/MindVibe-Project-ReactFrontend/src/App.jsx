@@ -7,9 +7,11 @@ import SignUpPage from "./components/SignUp/SignUpPage"
 import UserProfilePage from "./pages/UserProfilePage/UserProfilePage"
 import CurrentMood from "./components/CurrentMood/CurrentMood";
 import Footer from "./components/Footer/Footer"
+import FakeLogin from "./components/FakeLogin/FakeLogin";
 import "../src/index.css";
 
 function App() {
+
   return (
     <BrowserRouter>
       <div className="app-container">
@@ -24,7 +26,7 @@ function App() {
             <Route path="/UserProfilePage" element={<UserProfilePage />} />
             <Route path="/CurrentMood" element={<CurrentMood />} />
             <Route path="/MoodDetail" element={<MoodDetailPage />} />
-            
+            <Route path="fakelogin" element={<FakeLogin />} />
           </Routes>
         </main>
         <Footer />

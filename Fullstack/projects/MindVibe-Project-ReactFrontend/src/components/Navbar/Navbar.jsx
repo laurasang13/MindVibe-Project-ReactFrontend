@@ -29,7 +29,7 @@ function Navbar() {
           </div>
           <div className={styles["button-login"]}>
               <button className={styles["button-login"]}
-              onClick={() => navigate("/UserProfilePage")}>Login</button>
+              onClick={() => navigate("/FakeLogin")}>Login</button>
           </div>
       </nav>
       {menuOpen && (
