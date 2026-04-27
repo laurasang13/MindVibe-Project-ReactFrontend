@@ -1,126 +1,108 @@
 # MindVibes
 
-## Origen del proyecto
+## 1. Concepto: el por qué
 
-MindVibes nace de una idea sencilla pero potente: **darle forma digital al estado emocional de una persona**.
+**MindVibes** nace de una idea simple pero poderosa: muchas veces sentimos cosas que no sabemos nombrar ni gestionar.
 
-En un contexto donde todo va rápido y casi nadie se detiene a observar cómo se siente, surge la necesidad de una herramienta ligera, visual y accesible que permita:
+La aplicación busca crear un espacio donde el usuario pueda **identificar su estado emocional de forma visual e intuitiva**, y recibir una pequeña guía para acompañar ese momento.
 
-- Registrar estados de ánimo  
-- Detectar patrones emocionales  
-- Generar cierta conciencia personal sin fricción  
-
-El objetivo no es medicalizar ni sustituir nada, sino ofrecer un **espacio íntimo y cotidiano de autoconocimiento**.
+No pretende sustituir ayuda profesional, sino ofrecer un **primer paso de autoconciencia emocional**, combinando tecnología, diseño y bienestar.
 
 ---
 
-## ¿Cómo funciona?
+## 2. Cómo funciona
 
-MindVibes es una aplicación centrada en la experiencia del usuario, con un flujo simple:
+El flujo de la aplicación está diseñado para ser rápido, intuitivo y sin fricción:
 
-1. **Login (simulado en frontend)**  
-   Acceso rápido sin fricción.
+1. El usuario entra en la plataforma.
+2. Accede a una pantalla con diferentes **tarjetas de estados de ánimo**.
+3. Selecciona el mood que mejor representa cómo se siente.
+4. Automáticamente accede a una vista donde recibe:
+   - Una **micro acción inmediata**
+   - Recomendaciones prácticas
+   - Una frase positiva o reflexiva
 
-2. **Selección de estado de ánimo (mood)**  
-   Interfaz visual para elegir cómo se siente el usuario.
+Además, el usuario puede:
 
-3. **Registro del estado**  
-   El mood se guarda asociado al usuario.
-
-4. **Visualización / historial**  
-   Consulta de estados anteriores.
-
-5. **Interacción emocional ligera**  
-   Respuesta visual o lógica según el mood.
-
-Clave del sistema: **rapidez + claridad + mínima carga cognitiva**
-
----
-
-## Tecnologías empleadas
-
-### Frontend
-- React  
-- React Router  
-- CSS (responsive)  
-- Custom Hooks  
-
-### Inteligencia Artificial (soporte de desarrollo)
-- GPT (OpenAI)  
-- Gemini (Google)  
-
-Usadas como asistentes de desarrollo (no integradas en el producto final)
-
-### Otros
-- Vercel (deploy)  
-- Git & GitHub  
-- LocalStorage (persistencia de sesión simulada)  
+- Crear una cuenta (simulada actualmente con almacenamiento local)  
+- Guardar su historial de estados de ánimo  
+- Ver un resumen de sus moods  
+- Identificar su **estado de ánimo dominante** en base a su actividad reciente  
+- Acceder rápidamente a su mood actual  
+- Eliminar su historial cuando lo desee  
 
 ---
 
-## Retos y problemas encontrados
+## 3. Tecnologías empleadas
 
-### Gestión de estado
-- Persistencia de sesión sin backend  
-- Mantener datos sin recargar la app  
+El proyecto está desarrollado con un stack moderno orientado a frontend:
 
-### Navegación
-- Redirecciones tras login  
-- Protección de rutas  
+- **React**  
+- **React Router**  
+- **CSS Modules**  
+- **LocalStorage**  
+- **Custom Hooks**  
+- **API externa / lógica IA**  
 
-### UI/UX
-- Problemas de centrado y layout  
-- Overflow y recorte de contenido  
-- Ajustes responsive  
+### Inteligencia Artificial
 
-### Lógica frontend
-- Simulación de autenticación  
-- Manejo de datos sin API  
-
-### Deploy
-- Errores al hacer push  
-- Problemas al actualizar en Vercel  
-
-Este proyecto ha servido para enfrentarse a problemas reales de frontend.
+- **GPT (OpenAI)**  
+- **Gemini (Google)**  
 
 ---
 
-## Backlog (mejoras futuras)
+## 4. Desafíos técnicos
 
-### Funcionalidad
-- [ ] Backend real (Node / FastAPI)  
-- [ ] Autenticación con JWT  
-- [ ] Base de datos (MongoDB / PostgreSQL)  
-- [ ] Historial avanzado de moods  
-- [ ] Estadísticas y visualización de datos  
+Los principales retos durante el desarrollo han sido:
 
-### IA aplicada
-- [ ] Recomendaciones según estado emocional  
-- [ ] Análisis de patrones  
-- [ ] Chat emocional  
+### 1. Gestión del estado emocional del usuario
+- Diseñar una estructura para guardar moods
+- Calcular el estado dominante
+
+### 2. Persistencia de datos sin backend
+- Uso de localStorage
+- Mantener coherencia entre navegación y datos
+
+### 3. Integración de IA
+- Generación de contenido dinámico
+- Gestión de estados de carga
+
+### 4. Responsive design
+- Adaptación a distintos dispositivos
+- Navbar dinámica
+
+### 5. Experiencia de usuario
+- Flujo simple
+- Feedback inmediato
+
+---
+
+## 5. Backlog (mejoras futuras)
+
+### Funcionales
+- Autenticación real
+- Base de datos
+- Sistema de recomendaciones avanzado
+- Notificaciones
+
+### IA
+- Personalización avanzada
+- Análisis emocional (NLP)
+- Chat con IA
+
+### Analítica
+- Dashboard emocional
+- Evolución de moods
 
 ### UX/UI
-- [ ] Animaciones  
-- [ ] Mejor feedback visual  
-- [ ] Dark mode  
+- Animaciones
+- Dark mode
+- Mejoras responsive
 
-### Escalabilidad
-- [ ] Versión móvil optimizada  
-- [ ] PWA  
-
----
-
-## Conclusión
-
-MindVibes es un primer paso hacia algo más grande:
-
-> convertir datos emocionales en autoconocimiento accesible
-
-Un proyecto enfocado en aprender, iterar y construir con intención.
 
 ---
 
 ## Deployment
 * **Live URL:** *.....*
 
-* **GitHub Repository:** *....*
+* **Laura Sang** *https://github.com/laurasang13*
