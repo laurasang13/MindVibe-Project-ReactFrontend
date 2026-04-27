@@ -35,10 +35,10 @@ function Navbar() {
       </nav>
       {menuOpen && (
         <div className={styles["mobile-menu"]}>
-          <a href="/">Home</a>
-          <a href="/feelings">Moods</a>
-          <a href="#">Blog</a>
-          <a href="/UserProfilePage">Login</a>
+          <Link to="/">Home</Link>
+          <Link to="/feelings">Moods</Link>
+          <Link to="">Blog</Link>
+          <Link to="UserProfilePage">Login</Link>
         </div>
       )}
     </>
