@@ -49,7 +49,7 @@ Clave del sistema: **rapidez + claridad + mínima carga cognitiva**
 - GPT (OpenAI)  
 - Gemini (Google)  
 
-👉 Usadas como asistentes de desarrollo (no integradas en el producto final)
+Usadas como asistentes de desarrollo (no integradas en el producto final)
 
 ### Otros
 - Vercel (deploy)  
@@ -81,7 +81,7 @@ Clave del sistema: **rapidez + claridad + mínima carga cognitiva**
 - Errores al hacer push  
 - Problemas al actualizar en Vercel  
 
-👉 Este proyecto ha servido para enfrentarse a problemas reales de frontend.
+Este proyecto ha servido para enfrentarse a problemas reales de frontend.
 
 ---
 
